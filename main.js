@@ -59,16 +59,19 @@ document.querySelector("#closeBtn").addEventListener('click', navToggle);
 
 
 function navToggle(){
-    if (document.querySelector("#close").classList.contains("nav_active"))
+    if (document.querySelector("#close").classList.contains("nav_bar_active"))
     {
-        document.querySelector("#close").classList.remove("nav_active");
-        document.querySelector(".right_side_nav").classList.remove("mobnav");
+        document.querySelector("#close").classList.remove("nav_bar_active");
+        document.querySelector("#close").classList.add("anim");
+        document.querySelector(".right_side_nav").classList.add("anim");
         document.querySelector("#navicon").style.position = "absolute";
     }
     else
     {
-        document.querySelector("#close").classList.add("nav_active");
+        document.querySelector("#close").classList.add("nav_bar_active");
         document.querySelector(".right_side_nav").classList.add("mobnav");
+        document.querySelector("#close").classList.remove("anim");
+        document.querySelector(".right_side_nav").classList.remove("anim");
         document.querySelector("#navicon").style.position = "fixed";
     }
 }
