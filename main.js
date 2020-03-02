@@ -55,6 +55,7 @@ document.querySelector(".reset").addEventListener('click', reset);
 document.querySelector(".black").addEventListener('click', setBlackMode);
 document.querySelector(".white").addEventListener('click', setWhiteMode);
 document.querySelector("#navicon").addEventListener('click', navToggle);
+document.querySelector(".navicon").addEventListener('click', navToggle);
 document.querySelector("#closeBtn").addEventListener('click', navToggle);
 
 
@@ -65,6 +66,7 @@ function navToggle(){
         document.querySelector("#close").classList.add("anim");
         document.querySelector(".right_side_nav").classList.add("anim");
         document.querySelector("#navicon").style.position = "absolute";
+        document.querySelector(".navicon").style.display = "none";
     }
     else
     {
@@ -73,6 +75,7 @@ function navToggle(){
         document.querySelector("#close").classList.remove("anim");
         document.querySelector(".right_side_nav").classList.remove("anim");
         document.querySelector("#navicon").style.position = "fixed";
+        document.querySelector(".navicon").style.display = "inherit";
     }
 }
 
