@@ -409,6 +409,7 @@ option:not(:checked){
     }
     
     #close{
+        color: var(--text_color);
         transition: transform 1s ease 0s;
     }
     
@@ -426,6 +427,7 @@ option:not(:checked){
         height: 100%;
         overflow-x: hidden;
         text-align: center;
+        color: var(--text_color);
     }
     
     .mobnav a{
