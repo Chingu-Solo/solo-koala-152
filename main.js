@@ -58,6 +58,8 @@ document.querySelector("#navicon").addEventListener('click', navToggle);
 document.querySelector(".navicon").addEventListener('click', navToggle);
 document.querySelector("#closeBtn").addEventListener('click', navToggle);
 
+window.onscroll = scrollFunction;
+
 
 function navToggle(){
     if (document.querySelector("#close").classList.contains("nav_bar_active"))
